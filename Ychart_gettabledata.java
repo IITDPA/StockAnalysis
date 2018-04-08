@@ -18,24 +18,26 @@ public class Ychart_gettabledata {
 	public static void main(String[]args) throws InterruptedException, FileNotFoundException {
 		
 		
-		
+		String[] companies= {"OXY","COP","MRO"};
 		String[] variables= {"market_cap","pe_ratio","ps_ratio","ev_ebit","operating_earning_yield","peg_ratio","earning_yield","price_to_book_value","ev_revenues","dividend_yield","cash_dividend_payout_ratio_annual","profit_margin_ttm","payout_ratio","gross_profit_margin_ttm","return_on_invested_capital","return_on_equity","debt_equity_ratio_annual","fulmer_h_score","book_value_of_equity","current_ratio","high_price","low_price","volume","days_sales_outstanding","days_payables_outstanding","receivables_turnover_ttm","return_on_assets","return_on_invested_capital","quick_ratio","eps_est_long_term_growth"}; 
-		for(int i=1;i<30;i++)
-		{
-			generate_csv(variables[i]);
-		}
+		for(int j=1;j<3;j++)
+			for(int i=0;i<30;i++)
+			generate_csv(companies[j],variables[i]);
 	}
 	
-	static void generate_csv(String var) throws InterruptedException, FileNotFoundException
+	static void generate_csv(String com,String var) throws InterruptedException, FileNotFoundException
 	{
-		String login_str="https://ycharts.com/login?next=%2Fcompanies%2FOXY%2F"+var;
+		String login_str="https://ycharts.com/login?next=%2Fcompanies%2F"+com+"%2F"+var;
 		System.setProperty("webdriver.chrome.driver", "/Users/ishwaryachemarthi/eclipse-workspace/Project1/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(login_str);
 		if(driver.findElements(By.xpath("//input[@name='username']")).size()==0)
+		{	
+			System.out.println("skipped for"+com+var);
 			return;
+		}
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("sbelde2@uic.edu");
 	    driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Sai123456");
 	    driver.findElement(By.xpath("//button[@class='btn']")).click();
@@ -64,7 +66,7 @@ public class Ychart_gettabledata {
 	    String rightfirst_part = "//div[@class='ng-binding']//div[@class='dataColRt']/div/table/tbody/tr[";
 	    String rightsecond_part = "]/td[";
 	    String rightthird_part = "]";
-	    String File_name=var+".csv";
+	    String File_name=com+"_"+var+".csv";
 	    PrintWriter pw = new PrintWriter(new File(File_name));
         
 	    while(true){
@@ -143,4 +145,3 @@ public class Ychart_gettabledata {
         pw.close();
 	}
 }
-
