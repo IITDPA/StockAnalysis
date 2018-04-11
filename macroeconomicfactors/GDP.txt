@@ -1,0 +1,106 @@
+
+Dec. 31, 2017  19.75T  
+Sept. 30, 2017  19.50T  
+June 30, 2017  19.25T  
+March 31, 2017  19.06T  
+Dec. 31, 2016  18.91T  
+Sept. 30, 2016  18.73T  
+June 30, 2016  18.54T  
+March 31, 2016  18.33T  
+Dec. 31, 2015  18.29T  
+Sept. 30, 2015  18.23T  
+June 30, 2015  18.09T  
+March 31, 2015  17.87T  
+Dec. 31, 2014  17.74T  
+Sept. 30, 2014  17.62T  
+June 30, 2014  17.32T  
+March 31, 2014  17.03T  
+Dec. 31, 2013  17.00T  
+Sept. 30, 2013  16.75T  
+June 30, 2013  16.54T  
+March 31, 2013  16.48T  
+Dec. 31, 2012  16.30T  
+Sept. 30, 2012  16.23T  
+June 30, 2012  16.12T  
+March 31, 2012  15.97T  
+Dec. 31, 2011  15.79T  
+Sept. 30, 2011  15.59T  
+June 30, 2011  15.46T  
+March 31, 2011  15.24T  
+Dec. 31, 2010  15.23T  
+Sept. 30, 2010  15.06T  
+June 30, 2010  14.89T  
+March 31, 2010  14.68T  
+Dec. 31, 2009  14.57T  
+Sept. 30, 2009  14.38T  
+June 30, 2009  14.34T  
+March 31, 2009  14.38T  
+Dec. 31, 2008  14.55T  
+Sept. 30, 2008  14.84T  
+June 30, 2008  14.81T  
+March 31, 2008  14.67T  
+Dec. 31, 2007  14.69T  
+Sept. 30, 2007  14.57T  
+June 30, 2007  14.42T  
+March 31, 2007  14.23T  
+Dec. 31, 2006  14.07T  
+Sept. 30, 2006  13.91T  
+June 30, 2006  13.80T  
+March 31, 2006  13.65T  
+Dec. 31, 2005  13.38T  
+Sept. 30, 2005  13.21T  
+June 30, 2005  12.97T  
+March 31, 2005  12.81T  
+Dec. 31, 2004  12.56T  
+Sept. 30, 2004  12.37T  
+June 30, 2004  12.18T  
+March 31, 2004  11.99T  
+Dec. 31, 2003  11.82T  
+Sept. 30, 2003  11.63T  
+June 30, 2003  11.37T  
+March 31, 2003  11.23T  
+Dec. 31, 2002  11.10T  
+Sept. 30, 2002  11.04T  
+June 30, 2002  10.93T  
+March 31, 2002  10.83T  
+Dec. 31, 2001  10.70T  
+Sept. 30, 2001  10.64T  
+June 30, 2001  10.64T  
+March 31, 2001  10.51T  
+Dec. 31, 2000  10.47T  
+Sept. 30, 2000  10.36T  
+June 30, 2000  10.28T  
+March 31, 2000  10.03T  
+Dec. 31, 1999  9.926T  
+Sept. 30, 1999  9.712T  
+June 30, 1999  9.557T  
+March 31, 1999  9.447T  
+Dec. 31, 1998  9.326T  
+Sept. 30, 1998  9.147T  
+June 30, 1998  8.995T  
+March 31, 1998  8.890T  
+Exception in thread "main" org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'Ishwaryas-MacBook-Air.local', ip: 'fe80:0:0:0:4b1:ddfb:66e6:e733%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/5y/d8pcy5hj7rq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 8a8eb636e4ce6d91e01f624ea36709a5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:320)
+	at ycharts.Ychart_gettabledata.main(Ychart_gettabledata.java:73)

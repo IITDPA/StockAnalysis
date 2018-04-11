@@ -1,0 +1,269 @@
+
+Jan. 31, 2018  107.08  
+Dec. 31, 2017  107.36  
+Nov. 30, 2017  106.87  
+Oct. 31, 2017  106.59  
+Sept. 30, 2017  104.87  
+Aug. 31, 2017  104.56  
+July 31, 2017  105.01  
+June 30, 2017  105.25  
+May 31, 2017  105.07  
+April 30, 2017  105.05  
+March 31, 2017  103.92  
+Feb. 28, 2017  103.70  
+Jan. 31, 2017  103.46  
+Dec. 31, 2016  103.77  
+Nov. 30, 2016  102.95  
+Oct. 31, 2016  103.17  
+Sept. 30, 2016  102.99  
+Aug. 31, 2016  103.15  
+July 31, 2016  103.22  
+June 30, 2016  103.12  
+May 31, 2016  102.76  
+April 30, 2016  102.87  
+March 31, 2016  102.53  
+Feb. 29, 2016  103.27  
+Jan. 31, 2016  103.48  
+Dec. 31, 2015  102.92  
+Nov. 30, 2015  103.40  
+Oct. 31, 2015  104.00  
+Sept. 30, 2015  104.20  
+Aug. 31, 2015  104.51  
+July 31, 2015  104.52  
+June 30, 2015  103.99  
+May 31, 2015  104.28  
+April 30, 2015  104.66  
+March 31, 2015  105.07  
+Feb. 28, 2015  105.86  
+Jan. 31, 2015  105.99  
+Dec. 31, 2014  106.52  
+Nov. 30, 2014  106.69  
+Oct. 31, 2014  105.64  
+Sept. 30, 2014  105.58  
+Aug. 31, 2014  105.20  
+July 31, 2014  105.21  
+June 30, 2014  105.12  
+May 31, 2014  104.65  
+April 30, 2014  104.24  
+March 31, 2014  104.09  
+Feb. 28, 2014  103.81  
+Jan. 31, 2014  103.00  
+Dec. 31, 2013  103.19  
+Nov. 30, 2013  102.92  
+Oct. 31, 2013  102.65  
+Sept. 30, 2013  102.64  
+Aug. 31, 2013  102.04  
+July 31, 2013  101.27  
+June 30, 2013  101.66  
+May 31, 2013  99.42  
+April 30, 2013  99.31  
+March 31, 2013  99.49  
+Feb. 28, 2013  99.04  
+Jan. 31, 2013  98.41  
+Dec. 31, 2012  98.36  
+Nov. 30, 2012  98.26  
+Oct. 31, 2012  97.31  
+Sept. 30, 2012  97.39  
+Aug. 31, 2012  97.11  
+July 31, 2012  97.71  
+June 30, 2012  97.16  
+May 31, 2012  97.11  
+April 30, 2012  96.80  
+March 31, 2012  96.01  
+Feb. 29, 2012  96.38  
+Jan. 31, 2012  96.02  
+Dec. 31, 2011  95.20  
+Nov. 30, 2011  94.83  
+Oct. 31, 2011  94.73  
+Sept. 30, 2011  94.24  
+Aug. 31, 2011  94.15  
+July 31, 2011  93.69  
+June 30, 2011  93.09  
+May 31, 2011  92.88  
+April 30, 2011  92.58  
+March 31, 2011  93.02  
+Feb. 28, 2011  92.10  
+Jan. 31, 2011  92.61  
+Dec. 31, 2010  92.59  
+Nov. 30, 2010  91.81  
+Oct. 31, 2010  91.63  
+Sept. 30, 2010  91.91  
+Aug. 31, 2010  91.67  
+July 31, 2010  91.41  
+June 30, 2010  90.84  
+May 31, 2010  90.64  
+April 30, 2010  89.24  
+March 31, 2010  88.89  
+Feb. 28, 2010  88.22  
+Jan. 31, 2010  87.99  
+Dec. 31, 2009  86.93  
+Nov. 30, 2009  86.64  
+Oct. 31, 2009  86.31  
+Sept. 30, 2009  86.00  
+Aug. 31, 2009  85.37  
+July 31, 2009  84.57  
+June 30, 2009  83.73  
+May 31, 2009  84.05  
+April 30, 2009  84.95  
+March 31, 2009  85.62  
+Feb. 28, 2009  86.91  
+Jan. 31, 2009  87.54  
+Dec. 31, 2008  89.51  
+Nov. 30, 2008  92.12  
+Oct. 31, 2008  93.31  
+Sept. 30, 2008  92.53  
+Aug. 31, 2008  96.59  
+July 31, 2008  98.10  
+June 30, 2008  98.58  
+May 31, 2008  98.78  
+April 30, 2008  99.23  
+March 31, 2008  99.95  
+Feb. 29, 2008  100.22  
+Jan. 31, 2008  100.49  
+Dec. 31, 2007  100.74  
+Nov. 30, 2007  100.76  
+Oct. 31, 2007  100.20  
+Sept. 30, 2007  100.69  
+Aug. 31, 2007  100.30  
+July 31, 2007  100.18  
+June 30, 2007  100.13  
+May 31, 2007  100.14  
+April 30, 2007  100.09  
+March 31, 2007  99.37  
+Feb. 28, 2007  99.24  
+Jan. 31, 2007  98.17  
+Dec. 31, 2006  98.63  
+Nov. 30, 2006  97.68  
+Oct. 31, 2006  97.81  
+Sept. 30, 2006  97.84  
+Aug. 31, 2006  98.01  
+July 31, 2006  97.69  
+June 30, 2006  97.68  
+May 31, 2006  97.30  
+April 30, 2006  97.44  
+March 31, 2006  97.07  
+Feb. 28, 2006  96.83  
+Jan. 31, 2006  96.79  
+Dec. 31, 2005  96.67  
+Nov. 30, 2005  96.12  
+Oct. 31, 2005  95.18  
+Sept. 30, 2005  93.97  
+Aug. 31, 2005  95.87  
+July 31, 2005  95.72  
+June 30, 2005  95.91  
+May 31, 2005  95.53  
+April 30, 2005  95.37  
+March 31, 2005  95.24  
+Feb. 28, 2005  95.32  
+Jan. 31, 2005  94.71  
+Dec. 31, 2004  94.27  
+Nov. 30, 2004  93.63  
+Oct. 31, 2004  93.44  
+Sept. 30, 2004  92.55  
+Aug. 31, 2004  92.48  
+July 31, 2004  92.45  
+June 30, 2004  91.75  
+May 31, 2004  92.49  
+April 30, 2004  91.80  
+March 31, 2004  91.45  
+Feb. 29, 2004  91.92  
+Jan. 31, 2004  91.44  
+Dec. 31, 2003  91.20  
+Nov. 30, 2003  91.30  
+Oct. 31, 2003  90.61  
+Sept. 30, 2003  90.55  
+Aug. 31, 2003  90.04  
+July 31, 2003  90.27  
+June 30, 2003  89.73  
+May 31, 2003  89.70  
+April 30, 2003  89.66  
+March 31, 2003  90.36  
+Feb. 28, 2003  90.55  
+Jan. 31, 2003  90.29  
+Dec. 31, 2002  89.69  
+Nov. 30, 2002  90.12  
+Oct. 31, 2002  89.66  
+Sept. 30, 2002  89.94  
+Aug. 31, 2002  89.85  
+July 31, 2002  89.84  
+June 30, 2002  90.05  
+May 31, 2002  89.19  
+April 30, 2002  88.81  
+March 31, 2002  88.41  
+Feb. 28, 2002  87.73  
+Jan. 31, 2002  87.72  
+Dec. 31, 2001  87.18  
+Nov. 30, 2001  87.16  
+Oct. 31, 2001  87.64  
+Sept. 30, 2001  88.07  
+Aug. 31, 2001  88.38  
+July 31, 2001  88.56  
+June 30, 2001  89.04  
+May 31, 2001  89.63  
+April 30, 2001  90.29  
+March 31, 2001  90.56  
+Feb. 28, 2001  90.83  
+Jan. 31, 2001  91.40  
+Dec. 31, 2000  92.07  
+Nov. 30, 2000  92.34  
+Oct. 31, 2000  92.35  
+Sept. 30, 2000  92.67  
+Aug. 31, 2000  92.32  
+July 31, 2000  92.63  
+June 30, 2000  92.74  
+May 31, 2000  92.67  
+April 30, 2000  92.47  
+March 31, 2000  91.80  
+Feb. 29, 2000  91.41  
+Jan. 31, 2000  91.13  
+Dec. 31, 1999  91.10  
+Nov. 30, 1999  90.41  
+Oct. 31, 1999  89.97  
+Sept. 30, 1999  88.78  
+Aug. 31, 1999  89.10  
+July 31, 1999  88.74  
+June 30, 1999  88.18  
+May 31, 1999  88.32  
+April 30, 1999  87.64  
+March 31, 1999  87.47  
+Feb. 28, 1999  87.31  
+Jan. 31, 1999  86.91  
+Dec. 31, 1998  86.51  
+Nov. 30, 1998  86.21  
+Oct. 31, 1998  86.24  
+Sept. 30, 1998  85.58  
+Aug. 31, 1998  85.80  
+July 31, 1998  84.05  
+June 30, 1998  84.37  
+May 31, 1998  84.92  
+April 30, 1998  84.40  
+March 31, 1998  84.11  
+Feb. 28, 1998  84.04  
+Exception in thread "main" org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nextBtn']"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'Ishwaryas-MacBook-Air.local', ip: 'fe80:0:0:0:4b1:ddfb:66e6:e733%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/5y/d8pcy5hj7rq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: cc947e295349c03c4848dab365f26162
+*** Element info: {Using=xpath, value=//a[@class='nextBtn']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at ycharts.Ychart_gettabledata.main(Ychart_gettabledata.java:122)

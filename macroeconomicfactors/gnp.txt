@@ -1,0 +1,109 @@
+
+Dec. 31, 2017  17.47T  
+Sept. 30, 2017  17.35T  
+June 30, 2017  17.20T  
+March 31, 2017  17.08T  
+Dec. 31, 2016  17.04T  
+Sept. 30, 2016  16.93T  
+June 30, 2016  16.83T  
+March 31, 2016  16.72T  
+Dec. 31, 2015  16.73T  
+Sept. 30, 2015  16.69T  
+June 30, 2015  16.62T  
+March 31, 2015  16.53T  
+Dec. 31, 2014  16.41T  
+Sept. 30, 2014  16.35T  
+June 30, 2014  16.13T  
+March 31, 2014  15.96T  
+Dec. 31, 2013  16.01T  
+Sept. 30, 2013  15.86T  
+June 30, 2013  15.73T  
+March 31, 2013  15.69T  
+Dec. 31, 2012  15.58T  
+Sept. 30, 2012  15.59T  
+June 30, 2012  15.56T  
+March 31, 2012  15.51T  
+Dec. 31, 2011  15.43T  
+Sept. 30, 2011  15.25T  
+June 30, 2011  15.20T  
+March 31, 2011  15.09T  
+Dec. 31, 2010  15.13T  
+Sept. 30, 2010  15.03T  
+June 30, 2010  14.93T  
+March 31, 2010  14.79T  
+Dec. 31, 2009  14.71T  
+Sept. 30, 2009  14.58T  
+June 30, 2009  14.48T  
+March 31, 2009  14.50T  
+Dec. 31, 2008  14.70T  
+Sept. 30, 2008  15.09T  
+June 30, 2008  15.15T  
+March 31, 2008  15.07T  
+Dec. 31, 2007  15.19T  
+Sept. 30, 2007  15.09T  
+June 30, 2007  14.94T  
+March 31, 2007  14.80T  
+Dec. 31, 2006  14.79T  
+Sept. 30, 2006  14.67T  
+June 30, 2006  14.67T  
+March 31, 2006  14.63T  
+Dec. 31, 2005  14.46T  
+Sept. 30, 2005  14.41T  
+June 30, 2005  14.28T  
+March 31, 2005  14.22T  
+Dec. 31, 2004  14.03T  
+Sept. 30, 2004  13.94T  
+June 30, 2004  13.80T  
+March 31, 2004  13.73T  
+Dec. 31, 2003  13.64T  
+Sept. 30, 2003  13.45T  
+June 30, 2003  13.23T  
+March 31, 2003  13.09T  
+Dec. 31, 2002  13.04T  
+Sept. 30, 2002  13.01T  
+June 30, 2002  12.94T  
+March 31, 2002  12.89T  
+Dec. 31, 2001  12.82T  
+Sept. 30, 2001  12.71T  
+June 30, 2001  12.77T  
+March 31, 2001  12.70T  
+Dec. 31, 2000  12.75T  
+Sept. 30, 2000  12.65T  
+June 30, 2000  12.64T  
+March 31, 2000  12.40T  
+Dec. 31, 1999  12.37T  
+Sept. 30, 1999  12.15T  
+June 30, 1999  12.00T  
+March 31, 1999  11.90T  
+Dec. 31, 1998  11.79T  
+Sept. 30, 1998  11.60T  
+June 30, 1998  11.46T  
+March 31, 1998  11.36T  
+Exception in thread "main" org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nextBtn']"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.36.540469 (1881fd7f8641508feb5166b7cae561d87723cfa8),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'Ishwaryas-MacBook-Air.local', ip: 'fe80:0:0:0:4b1:ddfb:66e6:e733%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_162'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540469 (1881fd7f864150..., userDataDir: /var/folders/5y/d8pcy5hj7rq...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 69ed03bd95ce4e7afb76b3ce48fad083
+*** Element info: {Using=xpath, value=//a[@class='nextBtn']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at ycharts.Ychart_gettabledata.main(Ychart_gettabledata.java:122)
