@@ -1,0 +1,112 @@
+Starting ChromeDriver 2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7) on port 22510
+Only local connections are allowed.
+Apr 03, 2018 7:22:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jan. 31, 2018  1.952  
+Oct. 31, 2017  1.974  
+July 31, 2017  1.972  
+April 30, 2017  2.017  
+Jan. 31, 2017  2.015  
+Oct. 31, 2016  1.904  
+July 31, 2016  1.879  
+April 30, 2016  1.897  
+Jan. 31, 2016  1.858  
+Oct. 31, 2015  1.084  
+July 31, 2015  0.8048  
+April 30, 2015  0.8548  
+Jan. 31, 2015  0.7588  
+Oct. 31, 2014  -1.366  
+July 31, 2014  1.589  
+April 30, 2014  1.609  
+Jan. 31, 2014  1.388  
+Oct. 31, 2013  1.405  
+July 31, 2013  1.544  
+April 30, 2013  1.560  
+Jan. 31, 2013  1.524  
+Oct. 31, 2012  1.558  
+July 31, 2012  1.539  
+April 30, 2012  1.584  
+Jan. 31, 2012  1.316  
+Oct. 31, 2011  1.341  
+July 31, 2011  1.448  
+April 30, 2011  1.531  
+Jan. 31, 2011  1.576  
+Oct. 31, 2010  1.669  
+July 31, 2010  1.709  
+April 30, 2010  1.772  
+Jan. 31, 2010  1.465  
+Oct. 31, 2009  1.446  
+July 31, 2009  1.609  
+April 30, 2009  1.606  
+Jan. 31, 2009  1.586  
+Oct. 31, 2008  1.888  
+July 31, 2008  1.725  
+April 30, 2008  1.818  
+Jan. 31, 2008  1.559  
+Oct. 31, 2007  1.576  
+July 31, 2007  1.785  
+April 30, 2007  1.890  
+Jan. 31, 2007  1.594  
+Oct. 31, 2006  1.597  
+July 31, 2006  1.786  
+April 30, 2006  1.916  
+Jan. 31, 2006  1.585  
+Oct. 31, 2005  1.596  
+July 31, 2005  1.780  
+April 30, 2005  1.839  
+Jan. 31, 2005  1.455  
+Oct. 31, 2004  1.455  
+July 31, 2004  1.647  
+April 30, 2004  1.752  
+Jan. 31, 2004  1.416  
+Oct. 31, 2003  1.470  
+July 31, 2003  1.568  
+April 30, 2003  1.584  
+Jan. 31, 2003  1.532  
+Oct. 31, 2002  1.546  
+July 31, 2002  1.880  
+April 30, 2002  1.697  
+Jan. 31, 2002  1.746  
+Oct. 31, 2001  1.585  
+July 31, 2001  1.377  
+April 30, 2001  1.452  
+Jan. 31, 2001  1.479  
+Oct. 31, 2000  1.635  
+July 31, 2000  1.548  
+April 30, 2000  1.628  
+Jan. 31, 2000  1.544  
+Oct. 31, 1999  1.555  
+July 31, 1999  1.423  
+April 30, 1999  1.366  
+Jan. 31, 1999  1.445  
+Oct. 31, 1998  1.408  
+July 31, 1998  1.12  
+April 30, 1998  1.436  
+Exception in thread "main" org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='nextBtn']"}
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:08.638Z'
+System info: host: 'AYSHWARYA', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '9.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\ayshw\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: e913cc7613dcf988b51e3f3799372cc4
+*** Element info: {Using=xpath, value=//a[@class='nextBtn']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at Newpackage.MyClass.main(MyClass.java:94)
