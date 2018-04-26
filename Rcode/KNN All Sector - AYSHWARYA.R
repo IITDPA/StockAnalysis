@@ -1,6 +1,6 @@
 #**************************************************************************************
 # AUTHOR :- AYSHWARYA SAMBASIVAN A20411226
-# TITLE  :- Data Analysis - Implement KNN on Apple Intel and HPQ Dataset
+# TITLE  :- Data Analysis - Implement KNN on All sectors
 #**************************************************************************************
 
 
@@ -24,13 +24,31 @@ File_Name <- vector()
 File_Name[1] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/AAPL Dataset.xlsx'
 File_Name[2] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/INTC Dataset.xlsx'
 File_Name[3] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/HPQ Dataset.xlsx'
-File_Name
+File_Name[4] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/JPM Dataset.xlsx'
+File_Name[5] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/WFC Dataset.xlsx'
+File_Name[6] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/C Dataset.xlsx'
+File_Name[7] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/ABBV Dataset.xlsx'
+File_Name[8] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/BMY Dataset.xlsx'
+File_Name[9] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/PFE Dataset.xlsx'
+File_Name[10] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/OXY Dataset.xlsx'
+File_Name[11] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/MRO Dataset.xlsx'
+File_Name[12] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/COP Dataset.xlsx'
+
 Fname <- vector()
 Fname[1] <- "Apple"
 Fname[2] <- "Intel"
 Fname[3] <- "HP"
+Fname[4] <- "JPM"
+Fname[5] <- "WFC"
+Fname[6] <- "C"
+Fname[7] <- "ABBV"
+Fname[8] <- "BMY"
+Fname[9] <- "PFE"
+Fname[10] <- "OXY"
+Fname[11] <- "MRO"
+Fname[12] <- "COP"
 
-for (j in 1:3)
+for (j in 1:12)
 {
 
   File <- File_Name[j]

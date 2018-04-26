@@ -1,6 +1,6 @@
 #**************************************************************************************
 # AUTHOR :- AYSHWARYA SAMBASIVAN A20411226
-# TITLE  :- Data Analysis - Implement Naive Bayes on all sectors
+# TITLE  :- Data Analysis - Implement Naive Bayes on All sectors
 #**************************************************************************************
 
 
@@ -23,18 +23,17 @@ File_Name <- vector()
 File_Name[1] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/AAPL Dataset.xlsx'
 File_Name[2] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/INTC Dataset.xlsx'
 File_Name[3] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/HPQ Dataset.xlsx'
-File_Name[4] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/JPM.xlsx'
-File_Name[5] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/C.xlsx'
-File_Name[6] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/WFC.xlsx'
-File_Name[7] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/BMY Final.xlsx'
-File_Name[8] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/PFE Final.xlsx'
-File_Name[9] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/ABBV Final.xlsx'
-File_Name[10] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/COP Dataset.xlsx'
+File_Name[4] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/JPM Dataset.xlsx'
+File_Name[5] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/WFC Dataset.xlsx'
+File_Name[6] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/C Dataset.xlsx'
+File_Name[7] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/ABBV Dataset.xlsx'
+File_Name[8] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/BMY Dataset.xlsx'
+File_Name[9] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/PFE Dataset.xlsx'
+File_Name[10] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/OXY Dataset.xlsx'
 File_Name[11] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/MRO Dataset.xlsx'
-File_Name[12] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/OXY Dataset.xlsx'
+File_Name[12] <- 'C:/Users/ayshw/Documents/DPA MERGING/Final Datasets/COP Dataset.xlsx'
 
-File_Name
-for (j in 1:9)
+for (j in 1:12)
 {
   File <- File_Name[j]
   File <- read_excel(File)
@@ -45,18 +44,17 @@ for (j in 1:9)
   
   print(summary(File))
   print(sapply(File, function(x) sum(is.na(x))))
+  File      <- na.omit(File) # Missing values are already handled separately in a code. 
   
   #**************************************************************************************
-  # MISSING VALUES
+  # VISUALIZE ANY MISSING VALUES
   #**************************************************************************************
   
   missmap(File, main = "Missing values vs observed")
   print(head(File))
   n <- nrow(File)
   n
-  # Missing values are already handled separately in another code. This removes very few missing records
-  File      <- na.omit(File) 
-                          
+  
   #**************************************************************************************
   # UNCOMMENT THIS IN ORDER TO RUN WITHOUR ANY THRESHOLD
   #**************************************************************************************
@@ -131,7 +129,7 @@ for (j in 1:9)
   colnum
   
   #**************************************************************************************
-  # STRATIFIED SAMPLING SO SAFE CODING
+  # STRATIFIED SAMPLING SO DEFENSIVE CODING
   #**************************************************************************************
   
   set.seed(1000)
@@ -155,7 +153,6 @@ for (j in 1:9)
   #**************************************************************************************
   
   print(confusionMatrix(pred,testData_File_NB$Class,mode = "prec_recall"))
-  
   
   #**************************************************************************************
   # EVALUATION METRIC - ROC CURVE BETWEEN TRUE POSITIVE AND FALSE POSITIVE RATE
