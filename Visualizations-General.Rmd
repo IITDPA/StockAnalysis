@@ -1,0 +1,110 @@
+---
+title: "Visualization-Stock Analysis"
+author: "Tina"
+date: "4/24/2018"
+output: html_document
+---
+PLOT CLOSE PRICES OF COMPANIES TO OBSERVE THE TREND
+```{r}
+
+library(quantmod)
+library(PerformanceAnalytics)
+library(ggplot2)
+library(reshape2)
+library(iClick)
+library(plyr)
+library(scales)
+# FINANCE
+start <- as.Date("1998-02-01")
+end <- as.Date("2018-02-01")
+getSymbols(c("JPM", "WFC" , "C"), src = "yahoo", from = start, to = end)
+stocks <- as.xts(data.frame(JPM = JPM[, "JPM.Close"], WFC = WFC[, "WFC.Close"], 
+    C = C[, "C.Close"]))
+head(stocks)
+
+plot(as.zoo(stocks[, c("JPM.Close", "WFC.Close")]), screens = 1, lty = 1:2, 
+    xlab = "Date", ylab = "Price", col= c("blue", "red"))
+par(new = TRUE)
+plot(as.zoo(stocks[, "C.Close"]), screens = 1, lty = 3, xaxt = "n", yaxt = "n", 
+    xlab = "", ylab = "", col = "green")
+axis(4)
+mtext("Price", side = 4, line = 3)
+legend("topleft", c("JPM", "WFC", "C"), lty = 1:3, cex = 0.5)
+
+
+
+```
+This could be misleading and a better plot would be stock's returns.
+
+PLOT STOCK'S RETURN
+```{r}
+library(magrittr)
+# FINANCE
+stock_return = apply(stocks, 1, function(x) {x / stocks[1,]}) %>% 
+                                    t %>% as.xts
+plot(as.zoo(stock_return), screens = 1, lty = 1:3, xlab = "Date", ylab = "Return",col =c("blue" , "red","green"))
+legend("topleft", c("JPM", "WFC", "C"), lty = 1:3, cex = 0.5)
+
+#head(stock_return)
+
+
+```
+CORRELOGRAM
+```{r}
+library(ggcorrplot)
+#Create Vector of Tickers
+tickers <- c("ABBV","BMY","PFE","COP","MRO", "OXY" ,"AAPL","HP", "INTC",  "JPM", "WFC", "C")
+
+#Calculate Returns: Daily
+portfolioPrices <- NULL
+for (Ticker in tickers)
+  portfolioPrices <- cbind(portfolioPrices,
+                           getSymbols.yahoo(Ticker, from="2016-01-01", auto.assign=FALSE)[,4]) 
+
+#Delete all dates with no prices
+portfolioPrices <- portfolioPrices[apply(portfolioPrices,1,function(x) all(!is.na(x))),]
+#Rename Columns
+colnames(portfolioPrices) <- tickers
+
+#create cor matrix
+corr <- cor(portfolioPrices)
+
+#------------------------Correlogram---------------------------#
+ggcorrplot(corr, hc.order = TRUE, 
+           type = "lower", 
+           lab = TRUE, 
+           lab_size = 3, 
+           method="circle", 
+           colors = c("springgreen3", "white", "tomato2"), 
+           title="Correlogram of Assets",
+           legend.title = 'Pearson Correlation',
+           ggtheme=theme_gray) +
+           theme(plot.title = element_text(hjust = 0.5))
+
+
+
+```
+CALENDAR HEATMAP on S&P Returns
+```{r}
+stock_data <- getSymbols.yahoo("^GSPC",src="google", From = '2013-01-03', auto.assign=FALSE)[,4]
+ 
+stock_ret <- na.omit(periodReturn(stock_data,
+                                  period='daily',
+                                  type='arithmetic'))
+stock_ret <- transform(stock_ret,
+                        week = as.POSIXlt(index(stock_ret))$yday %/% 7 + 1,
+                        wday = as.POSIXlt(index(stock_ret))$wday,
+                        year = as.POSIXlt(index(stock_ret))$year + 1900)
+
+head(stock_ret)
+
+ggplot(stock_ret, aes(week, wday, fill = daily.returns)) + 
+  geom_tile(colour = "white") + 
+  scale_fill_gradientn('S&P 500 \n Returns',colours = c("#D61818","#FFAE63","#FFFFBD","#B5E384"), labels = percent) + 
+  facet_wrap(~ year, ncol = 1) 
+ 
+ 
+
+calendarHeat(stock_ret, ncolors = 99, color = "r2b", date.form = "%Y-%m-%d")
+
+ ```
