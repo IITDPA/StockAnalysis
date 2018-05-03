@@ -1,0 +1,177 @@
+---
+title: "STOCK ANALYSIS"
+author: "Tina"
+date: "4/16/2018"
+output: html_document
+---
+Read in data and data pre-processing
+```{r}
+rm(list=ls())
+getwd()
+setwd("/Users/tinapraveen/Desktop/StockAnalysis")
+library(xlsx)
+library(readxl)
+file <- "/Users/tinapraveen/Desktop/StockAnalysis/JPM.xlsx"
+jpm <- read_excel(file)
+str(jpm)
+row.has.na <- apply(jpm, 1, function(x){any(is.na(x))})
+sum(row.has.na)
+jpm.filtered <- jpm[!row.has.na, ]
+summary(jpm.filtered)
+jpm.filtered <- jpm.filtered[ , -c(1:3 , 16)]
+str(jpm.filtered)
+#jpm.filtered$CASH.DIVIDEND.PAYOUT.RATIO <-   #as.numeric(jpm.filtered$CASH.DIVIDEND.PAYOUT.RATIO)
+#class(jpm.filtered$CASH.DIVIDEND.PAYOUT.RATIO)
+
+```
+CORRELATION PLOTS ALL DOMAINS
+```{r}
+library(psych)
+library(corrplot)
+
+File_Name <- vector()
+File_Name[1] <- "/Users/tinapraveen/Desktop/StockAnalysis/AAPL.xlsx"
+File_Name[2] <- "/Users/tinapraveen/Desktop/StockAnalysis/INTC.xlsx"
+File_Name[3] <- "/Users/tinapraveen/Desktop/StockAnalysis/HPQ.xlsx"
+File_Name[4] <- "/Users/tinapraveen/Desktop/StockAnalysis/JPM.xlsx"
+File_Name[5] <- "/Users/tinapraveen/Desktop/StockAnalysis/WFC.xlsx"
+File_Name[6] <- "/Users/tinapraveen/Desktop/StockAnalysis/C.xlsx"
+File_Name[7] <- "/Users/tinapraveen/Desktop/StockAnalysis/ABBV.xlsx"
+File_Name[8] <- "/Users/tinapraveen/Desktop/StockAnalysis/BMY.xlsx"
+File_Name[9] <- "/Users/tinapraveen/Desktop/StockAnalysis/PFE.xlsx"
+File_Name[10] <- "/Users/tinapraveen/Desktop/StockAnalysis/OXY.xlsx"
+File_Name[11] <- "/Users/tinapraveen/Desktop/StockAnalysis/MRO.xlsx"
+File_Name[12] <- "/Users/tinapraveen/Desktop/StockAnalysis/COP.xlsx"
+
+for (j in 1:12)
+{
+  File <- File_Name[j]
+  File <- read_excel(File)
+pairs.panels(File[  ,2:10])
+pairs.panels(File[  ,11:19])
+pairs.panels(File[  ,20:29])
+corrplot(cor(File),type="upper", method = "number")
+}
+```
+LINEAR MODEL for ALL DOMAINS
+```{r}
+library(caret)
+set.seed(1312)
+# Normalize data 
+for (j in 1:12)
+{
+  File <- File_Name[j]
+  File <- read_excel(File)
+File <- scale(File)
+File <- data.frame(File)
+sample(File)
+index <- createDataPartition(File$CLOSE,p=0.8,list= FALSE)
+File_train <- File[index, ]
+File_test <- File[-index, ]
+lmodel<- step(lm(CLOSE ~ .,data=File_train),direction = "both")
+rmse_train <- sqrt(mean((jpm_train$CLOSE - predict(lmodel,File_train))^2))
+rmse_test <- sqrt(mean((jpm_test$CLOSE - predict(lmodel,File_test))^2))
+anova(lmodel)
+summary(lmodel)
+
+}
+```
+10- FOLD CROSS VALIDATION(implemented without using package)
+```{r}
+ jpm.filtered<-jpm.filtered[sample(nrow(jpm.filtered)),]
+
+#Create 10 equally size folds
+folds <- cut(seq(1,nrow(jpm.filtered)),breaks=10,labels=FALSE)
+df_CV <-NULL
+#Perform 10 fold cross validation
+for(i in 1:10){
+  print("Iteration:" )
+  print(i)
+  #Segment data by fold using the which() function 
+  testIndexes <- which(folds==i,arr.ind=TRUE)
+  testData <- jpm.filtered[testIndexes, ]
+  trainData <- jpm.filtered[-testIndexes, ]
+  lmodel2<- step(lm(CLOSE~ .,data=trainData),direction = "both")
+  rmse_train <- sqrt(mean((trainData$CLOSE - predict(lmodel2,trainData))^2))
+  print("Adjusted R -Sq:")
+  print(summary(lmodel2)$r.squared)
+  print("RMSE_train:")
+  print(rmse_train)
+  rmse_test <- sqrt(mean((testData$CLOSE - predict(lmodel2,testData))^2))
+  print("RMSE_test for iteration ")
+  print( rmse_test)
+  print("---------------------------------------------------") 
+  df_CV  <-cbind( c (rmse_train,rmse_test,summary(lmodel2)$adj.r.squared))
+}
+```
+Gradient Boosting Method (GBM ): ALL DOMAINS
+```{r}
+library(MASS)
+library(iterators)
+library(parallel)
+library(doMC)
+library(Metrics)
+registerDoMC(16)
+# caret model training parameters
+controlParameters <- trainControl(method = "repeatedcv", number = 10, repeats = 5, 
+                                 verboseIter = FALSE, allowParallel = TRUE)
+for (j in 1:12)
+{
+  File <- File_Name[j]
+  File <- read_excel(File)
+  File <- scale(File)
+File <- data.frame(File)
+sample(File)
+index <- createDataPartition(File$CLOSE,p=0.8,list= FALSE)
+File_train <- File[index, ]
+File_test <- File[-index, ]
+gbmFit <- train(CLOSE ~ ., method = "gbm", metric = "RMSE", maximize = FALSE,trControl = controlParameters, tuneGrid = expand.grid(n.trees = (4:10) * 50, interaction.depth = c(5), shrinkage = c(0.05), n.minobsinnode = c(10)), data = File_train, verbose = FALSE)
+print(rmse(File_train$CLOSE, predict(gbmFit, newdata = File_train)))
+
+# Predictions
+preds1 <- predict(gbmFit, newdata = File_test)
+print(rmse(File_test$CLOSE, preds1))
+}
+# 0.0284
+```
+PRINCIPAL COMPONENT ANALYSIS(PCA)
+```{r}
+pca <- prcomp(jpm.filtered)
+summary(pca)
+names(pca)
+pca$sdev
+pca$rotation <- -pca$rotation
+pca$rotation
+pca$x <- -pca$x
+head(pca$x)
+biplot(pca, scale=0)
+raw <- pca$x[,1:2]
+plot(raw[,1], raw[,2], col=rainbow(nrow(raw)), pch=20)
+```
+LASSO REGULARIZATION FOR ALL DOMAIN
+```{r}
+
+controlP <- trainControl(method = "cv", number = 10, returnResamp = "all")
+
+for (j in 1:12)
+{
+  File <- File_Name[j]
+  File <- read_excel(File)
+  File <- scale(File)
+  File <- data.frame(File)
+  sample(File)
+  index <- createDataPartition(File$CLOSE,p=0.8,list= FALSE)
+  File_train <- File[index, ]
+  File_test <- File[-index, ]
+  test_reg_cv_model <- train(CLOSE~., method = "lasso", trControl = controlP,
+                           preProc = c("center", "scale"), data=File_train)
+
+  pred <- predict(test_reg_cv_model, newdata = File_test)
+  rmse(File_test$CLOSE, pred)
+  varImp(test_reg_cv_model)
+  Impplot <- varImp(test_reg_cv_model)
+  plot(Impplot)
+}
+
+```
+
